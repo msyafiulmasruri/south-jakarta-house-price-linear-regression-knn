@@ -103,8 +103,8 @@ Model dan scaler yang sudah disimpan dapat dimuat kembali tanpa perlu training u
 ```python
 import joblib
 
-loaded_model = joblib.load('models/model_linear_regression.pkl')
-loaded_scaler = joblib.load('models/scaler.pkl')
+loaded_model = joblib.load('../models/model_linear_regression.pkl')
+loaded_scaler = joblib.load('../models/scaler.pkl')
 
 # Urutan kolom harus sama seperti X_train: LT, LB, JKT, JKM, GRS
 data_baru = [[500, 300, 4, 3, 1]]
